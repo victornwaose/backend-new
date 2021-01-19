@@ -23,10 +23,10 @@ app.get("/api/rates", function (req, res) {
 
 app.get("*", function(req, res) {
   console.log("Request made to the Catch-all Page");
-    res.send("Sorry, curency rates are not available.....");
+    res.send("Sorry,  rates are not available.....");
 });
-    
+const PORT = process.env.PORT || 3000;  
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
   console.log("hello")
 })
